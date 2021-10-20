@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Lajes</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <div class="cabecalho">
+
+    <head>
+      <h1>Calculo dos esforços em lajes retangulares</h1>
+      <h3>Momentos fletores por processo de Marcus (para lajes armadas em cruz)</h3>
+      <h5> <a href="mailto:luizhcoelho@gmail.com?subject=Assunto&body=Digite sua mensagem">
+          Luiz Herkenhoff Coelho</a> </h5>
+    </head>
+    <main>
+      <div class="Dados" <h4><b> Dados:</b> </h4></br></br>
+        <div class="casoMarcus">
+          <img src="https://i.imgur.com/JrtS0GA.jpg" /></br>
+          <div class="dados">
+            <b> <a> Caso: </a>
+
+              <select id="caso">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+
+              </select>
+              </br></br>
+              Lx [m]: <input type="number" id="Lx" placeholder="Lx [m]" </input> </br></br>
+              Ly [m]: <input type="number" id="Ly" placeholder="Ly [m]" </input> </br></br>
+              Q [kN/m²]: <input type="number" id="Q" placeholder="Q [kN/m²]" </input> </b></br>
+            </br>
+          </div>
+        </div>
+        <div class="tema"></br></br>
+          <button type=" submit" onclick="calcular()">Calcular os momentos fletores e as reações de apoio</button> &nbsp &nbsp &nbsp
+        </div>
+
+        <div id="resultado"></div>
+    </main>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
